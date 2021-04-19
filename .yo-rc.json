@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.pwr.isi"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "gateway",
+    "baseName": "quickfood",
+    "packageName": "com.pwr.isi",
+    "packageFolder": "com/pwr/isi",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "NTQ5MWJmMWE1NDJjYTZiMmFhYmExNmMwYTA1OTVkNjliODUzZjJhYWY0OTc5NTkyMGQ5NTJlNTgyMzEwZDBmNTIyYzliNjljYWZlMjdhOTdiMGJlYTljY2VhZjYxNzBmOWRhZmRkNjM1ODIyMjZlOGU1MTJkNmM5ZDhlMjVjMzk=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "flatly",
+    "clientThemeVariant": "primary",
+    "creationTimestamp": 1618860669229,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "@xiges/generator-jhipster-firebase",
+        "version": "0.0.5"
+      }
+    ],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

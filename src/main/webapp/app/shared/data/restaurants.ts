@@ -3,24 +3,24 @@ import { IRestaurant } from 'app/shared/model/restaurant.model';
 export const RESTAURANTS: Array<IRestaurant> = [
   {
     id: 1,
-    name: 'Thali',
+    name: 'McDonalds',
     location: {
-      longitude: 11,
-      latitude: 22
+      latitude: 51.1,
+      longitude: 17.03
     },
     type: {
-      name: 'Indian'
+      name: 'American'
     }
   },
   {
     id: 2,
-    name: 'McDonalds',
+    name: 'Goku Sushi',
     location: {
-      longitude: 11,
-      latitude: 22
+      latitude: 51.03,
+      longitude: 16.78
     },
     type: {
-      name: 'American'
+      name: 'Japanese'
     }
   }
 ];

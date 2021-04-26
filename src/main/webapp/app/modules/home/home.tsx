@@ -1,15 +1,11 @@
 import './home.scss';
 import 'leaflet/dist/leaflet.css';
 
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
-
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import {RestaurantList} from "app/modules/restaurant/components/restaurant-list";
 
 export type IHomeProp = StateProps;
 
@@ -24,18 +20,6 @@ export const Home = (props: IHomeProp) => {
         {account && account.login ? (
           <div>
             <Alert color="success">You are logged in as user {account.login}.</Alert>
-            <RestaurantList/>
-            <MapContainer center={[51, 17]} zoom={13} scrollWheelZoom={false}>
-              <TileLayer
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <Marker position={[51.505, 17.09]}>
-                <Popup>
-                  Thali - restauracja indyjska.
-                </Popup>
-              </Marker>
-            </MapContainer>
           </div>
         ) : (
           <div>
@@ -60,11 +44,7 @@ export const Home = (props: IHomeProp) => {
         )}
 
         <p>
-          If you like JHipster, do not forget to give us a star on{' '}
-          <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-          !
+          QuickFood enables you to order food and get it faster than you think.
         </p>
       </Col>
       <Col md="3" className="pad">

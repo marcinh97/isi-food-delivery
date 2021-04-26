@@ -4,6 +4,9 @@ import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import '../restaurant.scss'
 import {renderToStaticMarkup} from "react-dom/server";
 import { divIcon } from 'leaflet';
+import { Button } from 'reactstrap';
+
+import { Link } from "react-router-dom";
 
 export const RestaurantList = () => {
   const iconMarkup = renderToStaticMarkup(<i className=" fa fa-map-marker-alt fa-3x" />);
@@ -37,7 +40,8 @@ export const RestaurantList = () => {
                       icon={customMarkerIcon}
                 >
                 <Popup>
-                  { restaurant.name }
+                  <h5>{ restaurant.name }</h5>
+                  <Link to={"/account/menu?id="+restaurant.id}>MENU</Link>
                 </Popup>
               </Marker>
             ))

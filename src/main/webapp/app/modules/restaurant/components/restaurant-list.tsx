@@ -8,6 +8,9 @@ import { Button } from 'reactstrap';
 
 import { Link } from "react-router-dom";
 
+
+
+
 export const RestaurantList = () => {
   const iconMarkup = renderToStaticMarkup(<i className=" fa fa-map-marker-alt fa-3x" />);
   const customMarkerIcon = divIcon({

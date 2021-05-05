@@ -35,7 +35,7 @@ export const RestaurantMenu = (props: IActivateProps) => {
       }
     </div>*/
     <Provider>
-      <h1 style={{textAlign: 'center'}}>MENU: {restaurant.name} </h1>
+      <h1 style={{textAlign: 'center'}}>{restaurant.name} </h1>
       <div className="menu">
         <Mains meals={mains} />
         <aside className="aside">
